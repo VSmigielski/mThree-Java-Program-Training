@@ -1,3 +1,4 @@
+/* This file was not programmed by me, this was given to use for the exercise */
 drop database if exists PersonalTrainer;
 
 create database PersonalTrainer;
