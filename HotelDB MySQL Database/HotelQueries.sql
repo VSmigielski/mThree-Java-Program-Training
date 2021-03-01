@@ -27,7 +27,7 @@ INNER JOIN RoomReservation RR ON RR.ReservationId = R.ReservationId
 INNER JOIN Room RM ON RM.RoomNumber = RR.RoomNumber
 INNER JOIN RoomAmenities RA ON RA.RoomNumber = RM.RoomNumber
 INNER JOIN Amenities A ON A.AmenitiesID = RA.AmenitiesID
-WHERE A.AmenitiesID = 1 OR A.AmenitiesID = 3;
+WHERE A.AmenitiesName = 'Jacuzzi';
 
 -- FirstName LastName RoomNumber StartDate  EndDate
 -- Karie Yang         201        2023-03-06 2023-03-07
@@ -95,44 +95,45 @@ LEFT JOIN Reservation R ON R.ReservationId = RR.ReservationId;
 -- 401 22 399.99 1199.97
 -- 402 NULL 399.99 NULL
 
-
 -- 5. Write a query that returns all the rooms accommodating at least three 
 -- guests and that are reserved on any date in April 2023.
 
-SELECT DISTINCT `FirstName`, `LastName`, RM.`RoomNumber`, SUM(`Adults` + `Children`) AS `GuestCount`, `StartDate`, `EndDate`
-FROM Guest
-INNER JOIN Reservation R ON R.GuestId = guest.GuestId 
-INNER JOIN RoomReservation RR ON RR.ReservationId = R.ReservationId
+SELECT RM.`RoomNumber`, `StartDate`, `EndDate`, `MaxOccupancy`
+FROM Reservation
+INNER JOIN RoomReservation RR ON RR.ReservationId = Reservation.ReservationId
 INNER JOIN Room RM ON RM.RoomNumber = RR.RoomNumber
-WHERE (R.EndDate BETWEEN '2023/04/01' AND '2023/04/31') 
-AND (R.StartDate BETWEEN '2023/04/01' AND '2023/04/31')
-HAVING SUM(`Adults`+ `Children`) >= 3;
+INNER JOIN RoomType RT ON RT.RoomTypeId = RM.RoomTypeId
+WHERE RT.MaxOccupancy >= 3 
+AND ((Reservation.StartDate BETWEEN '2023/04/01' AND '2023/04/30') 
+OR (Reservation.EndDate BETWEEN '2023/04/01' AND '2023/04/30'));
 
--- FirstName LastName RoomNumber StartDate EndDate
--- 0 rows fetched
+-- RoomNumber StartDate    EndDate     MaxOccupancy
+-- 301        2023-04-09   2023-04-13  4
 
 -- 6. Write a query that returns a list of all guest names and the number of 
 -- reservations per guest, sorted starting with the guest with the most 
 -- reservations and then by the guest's last name.
 
-SELECT DISTINCT guest.`FirstName`, guest.`LastName`, COUNT(R.`ReservationId`) AS `ReservationCount`
+SELECT DISTINCT ANY_VALUE(guest.`FirstName`) AS `FirstName`, guest.`LastName`, 
+COUNT(R.ReservationId) AS `ReservationCount`
 FROM Guest
 INNER JOIN Reservation R ON R.GuestId = guest.GuestId 
-GROUP BY R.ReservationId, guest.FirstName, guest.LastName
-ORDER BY COUNT(ReservationCount) AND guest.`LastName`;
+GROUP BY guest.LastName
+ORDER BY COUNT(`ReservationID`) DESC, guest.`LastName`;
 
 -- FirstName LastName ReservationCount
--- Veronica McCormick 1
--- Mack Simmer        1
--- Bettyann Seery     1
--- Duane Cullison     1
--- Karie Yang         1
--- Aurore Lipton      1
+-- Mack Simmer        4
+-- Bettyann Seery     3
+-- Duane Cullison     2
+-- Walter Holaway     2
+-- Aurore Lipton      2
+-- Veronica McCormick 2
+-- Maritza Tilton     2
+-- Joleen Tison       2
+-- Wilfred Vise       2
+-- Karie Yang         2
 -- Zachery Luechtefeld 1
--- Walter Holaway     1
--- Wilfred Vise       1
--- Maritza Tilton     1
--- Joleen Tison       1
+
 
 
 

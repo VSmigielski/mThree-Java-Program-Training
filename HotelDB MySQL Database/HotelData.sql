@@ -38,11 +38,10 @@ VALUES ('12345 Apple Lane', 'San Diego', 'CA', '92124'),
 
 -- INT, CHAR
 INSERT INTO Amenities (AmenitiesName)
-VALUES ('Microwave, Jacuzzi'), 
+VALUES ('Microwave'), 
+('Jacuzzi'), 
 ('Refrigerator'), 
-('Microwave, Refrigerator, Jacuzzi'), 
-('Microwave, Refrigerator'), 
-('Microwave, Refrigerator, Oven');
+('Oven');
 
 -- INT, CHAR
 INSERT INTO Room (RoomNumber, RoomTypeId)
@@ -52,9 +51,10 @@ VALUES (201, 1), (202, 2), (203, 3), (204, 4), (205, 5), (206, 6),
 
 -- INT, INT
 INSERT INTO RoomAmenities (RoomNumber, AmenitiesID)
-VALUES (201, 1), (202, 2), (203, 1), (204, 2), (205, 3), (206, 4),
-(207, 3), (208, 4), (301, 1), (302, 2), (303, 1), (304, 2), (305, 3),
-(306, 4), (307, 3), (308, 4), (401, 5), (402, 5);
+VALUES (201, 1), (201, 2), (202, 3), (203, 1), (203, 2), (204, 3), (205, 1), (205, 2), (205, 3), (206, 1),
+(206, 3), (207, 1), (207, 2), (207, 3), (208, 1), (208, 3), (301, 1), (301, 2), (302, 3), (303, 1), 
+(303, 2), (304, 3), (305, 1), (305, 2), (305, 3), (306, 1), (306, 3), (307, 1), (307, 2), (307, 3), 
+(308, 1), (308, 3), (401, 1), (401, 3), (401, 4), (402, 1), (402, 3), (402, 4);
 
 -- CHAR, CHAR, INT, CHAR
 INSERT INTO Guest (FirstName, LastName, AddressId, Phone)
