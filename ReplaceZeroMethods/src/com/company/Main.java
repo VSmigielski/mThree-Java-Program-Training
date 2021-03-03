@@ -58,7 +58,7 @@ public class Main {
         // Check through array
         for (int i = 0; i < arr.length; i++) {
             // Find zeros in array
-            if (arr[i] ==0 ) {
+            if (arr[i] == 0 ) {
                 // swap for largest
                 arr[i] = largest;
             }
