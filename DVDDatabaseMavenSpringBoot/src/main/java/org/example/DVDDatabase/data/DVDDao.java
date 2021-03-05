@@ -2,16 +2,27 @@ package org.example.DVDDatabase.data;
 import java.util.List;
 import org.example.DVDDatabase.models.DVD;
 public interface DVDDao {
+    // Create
     DVD add(DVD dvd);
 
     List<DVD> getAll();
 
-    DVD findById(int id);
+    // Retrievals
+    DVD findByDVDId(int dvdId);
+    List <DVD> findByTitle(String title);
 
+    List <DVD> findByReleaseYear(int releaseYear);
+
+    List <DVD> findByDirector(String director);
+
+    List <DVD> findByRating(String rating);
+
+    // Update
     // true if item exists and is updated
-    boolean update(DVD dvd);
+    boolean update(DVD dvdId);
 
+    // Delete
     // true if item exists and is deleted
-    boolean deleteById(int id);
+    boolean deleteByDVDId(int dvdId);
 
 }
