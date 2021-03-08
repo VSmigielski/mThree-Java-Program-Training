@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: org.example.CowsAndBulls.service.GamesServiceTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0 sec <<< FAILURE! - in org.example.CowsAndBulls.service.GamesServiceTest
+initializationError(org.example.CowsAndBulls.service.GamesServiceTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.Exception: Method testDetermineResult1() should be public
+
+initializationError(org.example.CowsAndBulls.service.GamesServiceTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.Exception: Method testDetermineResult2() should be public
+
+initializationError(org.example.CowsAndBulls.service.GamesServiceTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.Exception: Method testDetermineResult3() should be public
+
+initializationError(org.example.CowsAndBulls.service.GamesServiceTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.Exception: Method testDetermineResult4() should be public
+
+initializationError(org.example.CowsAndBulls.service.GamesServiceTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.Exception: Method testDetermineResult5() should be public
+

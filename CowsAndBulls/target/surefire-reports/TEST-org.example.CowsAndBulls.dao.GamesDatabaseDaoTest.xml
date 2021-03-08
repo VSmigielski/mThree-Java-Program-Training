@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.example.CowsAndBulls.dao.GamesDatabaseDaoTest" time="7.171" tests="3" errors="2" skipped="0" failures="1">
+  <properties>
+    <property name="idea.version" value="2020.3.2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.10+9"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="E:\mThree Java Program Files\mThree-Java-Program-Training\CowsAndBulls"/>
+    <property name="java.vm.vendor" value="AdoptOpenJDK"/>
+    <property name="java.vendor.url" value="https://adoptopenjdk.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="E:\mThree Java Program Files\mThree-Java-Program-Training\CowsAndBulls"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="11.0.10+9"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\veron\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3.2\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3.2\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Amazon Corretto\jdk11.0.10_9\bin;C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\SourceGear\Common\DiffMerge\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\veron\AppData\Local\Microsoft\WindowsApps;C:\Users\veron\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\veron\AppData\Local\GitHubDesktop\bin;C:\Users\veron\AppData\Roaming\npm;."/>
+    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3.2\plugins\maven\lib\maven3/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\veron"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="veron"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3.2\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2020.3.2 install"/>
+    <property name="java.home" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.10"/>
+    <property name="java.vendor" value="AdoptOpenJDK"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3.2\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2021-01-19"/>
+    <property name="java.vendor.url.bug" value="https://github.com/AdoptOpenJDK/openjdk-support/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="AdoptOpenJDK"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="testGetAllGames" classname="org.example.CowsAndBulls.dao.GamesDatabaseDaoTest" time="0.054">
+    <failure message="expected:&lt;2&gt; but was:&lt;0&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<2> but was:<0>
+	at org.example.CowsAndBulls.dao.GamesDatabaseDaoTest.testGetAllGames(GamesDatabaseDaoTest.java:84)
+]]></failure>
+    <system-out><![CDATA[20:33:27.757 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class org.example.CowsAndBulls.dao.GamesDatabaseDaoTest]
+20:33:27.767 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+20:33:27.787 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+20:33:27.826 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [org.example.CowsAndBulls.dao.GamesDatabaseDaoTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+20:33:27.859 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.example.CowsAndBulls.dao.GamesDatabaseDaoTest], using SpringBootContextLoader
+20:33:27.869 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [org.example.CowsAndBulls.dao.GamesDatabaseDaoTest]: class path resource [org/example/CowsAndBulls/dao/GamesDatabaseDaoTest-context.xml] does not exist
+20:33:27.870 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [org.example.CowsAndBulls.dao.GamesDatabaseDaoTest]: class path resource [org/example/CowsAndBulls/dao/GamesDatabaseDaoTestContext.groovy] does not exist
+20:33:27.871 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [org.example.CowsAndBulls.dao.GamesDatabaseDaoTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+20:33:28.025 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [org.example.CowsAndBulls.dao.GamesDatabaseDaoTest]
+20:33:28.212 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [org.example.CowsAndBulls.dao.GamesDatabaseDaoTest]: using defaults.
+20:33:28.213 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+20:33:28.244 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@45ac5f9b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@135606db, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@518caac3, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@68034211, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4f74980d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6c372fe6, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@58594a11, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2a3888c1, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4167d97b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@14fa86ae, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6e15fe2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@68f1b17f]
+20:33:28.246 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.example.CowsAndBulls.dao.GamesDatabaseDaoTest]
+20:33:28.246 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.example.CowsAndBulls.dao.GamesDatabaseDaoTest]
+20:33:28.247 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.example.CowsAndBulls.dao.GamesDatabaseDaoTest]
+20:33:28.247 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.example.CowsAndBulls.dao.GamesDatabaseDaoTest]
+20:33:28.249 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.example.CowsAndBulls.dao.GamesDatabaseDaoTest]
+20:33:28.250 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.example.CowsAndBulls.dao.GamesDatabaseDaoTest]
+20:33:28.260 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@5cdec700 testClass = GamesDatabaseDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@6d026701 testClass = GamesDatabaseDaoTest, locations = '{}', classes = '{class org.example.CowsAndBulls.TestApplicationConfiguration, class org.example.CowsAndBulls.TestApplicationConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@47987356, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3b6ddd1d, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@b676e39c, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1de5f259, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@d9345cd], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+20:33:28.261 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.example.CowsAndBulls.dao.GamesDatabaseDaoTest]
+20:33:28.261 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.example.CowsAndBulls.dao.GamesDatabaseDaoTest]
+20:33:28.309 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.0.RELEASE)
+
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdateGame" classname="org.example.CowsAndBulls.dao.GamesDatabaseDaoTest" time="0.004">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at org.example.CowsAndBulls.dao.GamesDatabaseDaoTest.testUpdateGame(GamesDatabaseDaoTest.java:102)
+</error>
+  </testcase>
+  <testcase name="testAddGetGame" classname="org.example.CowsAndBulls.dao.GamesDatabaseDaoTest" time="0.003">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at org.example.CowsAndBulls.dao.GamesDatabaseDaoTest.testAddGetGame(GamesDatabaseDaoTest.java:66)
+</error>
+  </testcase>
+</testsuite>

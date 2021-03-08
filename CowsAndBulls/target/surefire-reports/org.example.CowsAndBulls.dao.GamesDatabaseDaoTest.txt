@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: org.example.CowsAndBulls.dao.GamesDatabaseDaoTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 7.171 sec <<< FAILURE! - in org.example.CowsAndBulls.dao.GamesDatabaseDaoTest
+testGetAllGames(org.example.CowsAndBulls.dao.GamesDatabaseDaoTest)  Time elapsed: 0.054 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<2> but was:<0>
+	at org.example.CowsAndBulls.dao.GamesDatabaseDaoTest.testGetAllGames(GamesDatabaseDaoTest.java:84)
+
+testUpdateGame(org.example.CowsAndBulls.dao.GamesDatabaseDaoTest)  Time elapsed: 0.004 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.example.CowsAndBulls.dao.GamesDatabaseDaoTest.testUpdateGame(GamesDatabaseDaoTest.java:102)
+
+testAddGetGame(org.example.CowsAndBulls.dao.GamesDatabaseDaoTest)  Time elapsed: 0.003 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.example.CowsAndBulls.dao.GamesDatabaseDaoTest.testAddGetGame(GamesDatabaseDaoTest.java:66)
+

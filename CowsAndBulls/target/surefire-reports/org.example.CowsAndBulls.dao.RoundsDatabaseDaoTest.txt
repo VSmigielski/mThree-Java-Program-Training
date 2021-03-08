@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.example.CowsAndBulls.dao.RoundsDatabaseDaoTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0 sec <<< FAILURE! - in org.example.CowsAndBulls.dao.RoundsDatabaseDaoTest
+testAddGetAll(org.example.CowsAndBulls.dao.RoundsDatabaseDaoTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<2> but was:<0>
+	at org.example.CowsAndBulls.dao.RoundsDatabaseDaoTest.testAddGetAll(RoundsDatabaseDaoTest.java:85)
+

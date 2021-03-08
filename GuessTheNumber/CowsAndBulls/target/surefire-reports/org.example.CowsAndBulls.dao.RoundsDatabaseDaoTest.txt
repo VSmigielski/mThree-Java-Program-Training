@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: org.example.CowsAndBulls.dao.RoundsDatabaseDaoTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec <<< FAILURE! - in org.example.CowsAndBulls.dao.RoundsDatabaseDaoTest
+initializationError(org.example.CowsAndBulls.dao.RoundsDatabaseDaoTest)  Time elapsed: 0 sec  <<< ERROR!
+org.junit.runners.model.InvalidTestClassError: 
+Invalid test class 'org.example.CowsAndBulls.dao.RoundsDatabaseDaoTest':
+  1. The class org.example.CowsAndBulls.dao.RoundsDatabaseDaoTest is not public.
+  2. Test class should have exactly one public constructor
+  3. No runnable methods
+

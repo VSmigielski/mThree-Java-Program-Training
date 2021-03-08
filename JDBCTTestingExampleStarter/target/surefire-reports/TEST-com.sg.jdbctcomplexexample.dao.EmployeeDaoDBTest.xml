@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="5" failures="3" name="com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest" time="0.461" errors="0" skipped="0">
+  <properties>
+    <property name="idea.version" value="2020.3.2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.10+9"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="E:\mThree Java Program Files\mThree-Java-Program-Training\JDBCTTestingExampleStarter"/>
+    <property name="java.vm.vendor" value="AdoptOpenJDK"/>
+    <property name="java.vendor.url" value="https://adoptopenjdk.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="E:\mThree Java Program Files\mThree-Java-Program-Training\JDBCTTestingExampleStarter"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="11.0.10+9"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\veron\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3.2\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3.2\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Amazon Corretto\jdk11.0.10_9\bin;C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\SourceGear\Common\DiffMerge\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\veron\AppData\Local\Microsoft\WindowsApps;C:\Users\veron\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\veron\AppData\Local\GitHubDesktop\bin;C:\Users\veron\AppData\Roaming\npm;."/>
+    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3.2\plugins\maven\lib\maven3/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\veron"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="veron"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3.2\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2020.3.2 install"/>
+    <property name="java.home" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.10"/>
+    <property name="java.vendor" value="AdoptOpenJDK"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3.2\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2021-01-19"/>
+    <property name="java.vendor.url.bug" value="https://github.com/AdoptOpenJDK/openjdk-support/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="AdoptOpenJDK"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest" name="addGetEmployee" time="0.372">
+    <failure message="expected:&lt;com.sg.jdbctcomplexexample.entity.Employee@75de6341&gt; but was:&lt;com.sg.jdbctcomplexexample.entity.Employee@74170687&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;com.sg.jdbctcomplexexample.entity.Employee@75de6341&gt; but was:&lt;com.sg.jdbctcomplexexample.entity.Employee@74170687&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest.addGetEmployee(EmployeeDaoDBTest.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:83)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>14:27:42.525 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest]
+14:27:42.534 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+14:27:42.543 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+14:27:42.566 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+14:27:42.580 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest], using SpringBootContextLoader
+14:27:42.585 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest]: class path resource [com/sg/jdbctcomplexexample/dao/EmployeeDaoDBTest-context.xml] does not exist
+14:27:42.585 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest]: class path resource [com/sg/jdbctcomplexexample/dao/EmployeeDaoDBTestContext.groovy] does not exist
+14:27:42.585 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+14:27:42.622 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an &apos;annotation declaring class&apos; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest]
+14:27:42.780 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest]: using defaults.
+14:27:42.782 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+14:27:42.790 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+14:27:42.797 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7b50df34, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1b410b60, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2462cb01, org.springframework.test.context.support.DirtiesContextTestExecutionListener@19b843ba, org.springframework.test.context.transaction.TransactionalTestExecutionListener@64ec96c6, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@77659b30, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@456d6c1e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1e13529a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1ec9bd38, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@452e19ca, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6b0d80ed]
+14:27:42.802 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest]
+14:27:42.802 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest]
+14:27:42.803 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest]
+14:27:42.803 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest]
+14:27:42.809 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@7bf3a5d8 testClass = EmployeeDaoDBTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@42e25b0b testClass = EmployeeDaoDBTest, locations = &apos;{}&apos;, classes = &apos;{class com.sg.jdbctcomplexexample.TestApplicationConfiguration, class com.sg.jdbctcomplexexample.TestApplicationConfiguration}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}&apos;, contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@76ed1b7c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6236eb5f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@757acd7b, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6c779568], contextLoader = &apos;org.springframework.boot.test.context.SpringBootContextLoader&apos;, parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+14:27:42.810 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest]
+14:27:42.810 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest]
+14:27:42.824 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@7bf3a5d8 testClass = EmployeeDaoDBTest, testInstance = com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest@64e7619d, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@42e25b0b testClass = EmployeeDaoDBTest, locations = &apos;{}&apos;, classes = &apos;{class com.sg.jdbctcomplexexample.TestApplicationConfiguration, class com.sg.jdbctcomplexexample.TestApplicationConfiguration}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}&apos;, contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@76ed1b7c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6236eb5f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@757acd7b, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6c779568], contextLoader = &apos;org.springframework.boot.test.context.SpringBootContextLoader&apos;, parent = [null]], attributes = map[[empty]]]].
+14:27:42.851 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource &apos;systemProperties&apos; with lowest search precedence
+14:27:42.852 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource &apos;systemEnvironment&apos; with lowest search precedence
+14:27:42.852 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [MapPropertySource@297490204 {name=&apos;systemProperties&apos;, properties={sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, java.specification.version=11, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1252, java.class.path=E:\mThree Java Program Files\mThree-Java-Program-Training\JDBCTTestingExampleStarter\target\test-classes;E:\mThree Java Program Files\mThree-Java-Program-Training\JDBCTTestingExampleStarter\target\classes;C:\Users\veron\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.0.5.RELEASE\spring-boot-starter-jdbc-2.0.5.RELEASE.jar;C:\Users\veron\.m2\repository\org\springframework\boot\spring-boot-starter\2.0.5.RELEASE\spring-boot-starter-2.0.5.RELEASE.jar;C:\Users\veron\.m2\repository\org\springframework\boot\spring-boot\2.0.5.RELEASE\spring-boot-2.0.5.RELEASE.jar;C:\Users\veron\.m2\repository\org\springframework\spring-context\5.0.9.RELEASE\spring-context-5.0.9.RELEASE.jar;C:\Users\veron\.m2\repository\org\springframework\spring-aop\5.0.9.RELEASE\spring-aop-5.0.9.RELEASE.jar;C:\Users\veron\.m2\repository\org\springframework\spring-expression\5.0.9.RELEASE\spring-expression-5.0.9.RELEASE.jar;C:\Users\veron\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.0.5.RELEASE\spring-boot-autoconfigure-2.0.5.RELEASE.jar;C:\Users\veron\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.0.5.RELEASE\spring-boot-starter-logging-2.0.5.RELEASE.jar;C:\Users\veron\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\veron\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\veron\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.10.0\log4j-to-slf4j-2.10.0.jar;C:\Users\veron\.m2\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar;C:\Users\veron\.m2\repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar;C:\Users\veron\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\veron\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;C:\Users\veron\.m2\repository\com\zaxxer\HikariCP\2.7.9\HikariCP-2.7.9.jar;C:\Users\veron\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\veron\.m2\repository\org\springframework\spring-jdbc\5.0.9.RELEASE\spring-jdbc-5.0.9.RELEASE.jar;C:\Users\veron\.m2\repository\org\springframework\spring-beans\5.0.9.RELEASE\spring-beans-5.0.9.RELEASE.jar;C:\Users\veron\.m2\repository\org\springframework\spring-tx\5.0.9.RELEASE\spring-tx-5.0.9.RELEASE.jar;C:\Users\veron\.m2\repository\mysql\mysql-connector-java\8.0.13\mysql-connector-java-8.0.13.jar;C:\Users\veron\.m2\repository\com\google\protobuf\protobuf-java\3.6.1\protobuf-java-3.6.1.jar;C:\Users\veron\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.0.5.RELEASE\spring-boot-starter-test-2.0.5.RELEASE.jar;C:\Users\veron\.m2\repository\org\springframework\boot\spring-boot-test\2.0.5.RELEASE\spring-boot-test-2.0.5.RELEASE.jar;C:\Users\veron\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.0.5.RELEASE\spring-boot-test-autoconfigure-2.0.5.RELEASE.jar;C:\Users\veron\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\Users\veron\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\veron\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\veron\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\veron\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\veron\.m2\repository\org\assertj\assertj-core\3.9.1\assertj-core-3.9.1.jar;C:\Users\veron\.m2\repository\org\mockito\mockito-core\2.15.0\mockito-core-2.15.0.jar;C:\Users\veron\.m2\repository\net\bytebuddy\byte-buddy\1.7.9\byte-buddy-1.7.9.jar;C:\Users\veron\.m2\repository\net\bytebuddy\byte-buddy-agent\1.7.9\byte-buddy-agent-1.7.9.jar;C:\Users\veron\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\veron\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\veron\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\Users\veron\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\veron\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\veron\.m2\repository\org\springframework\spring-core\5.0.9.RELEASE\spring-core-5.0.9.RELEASE.jar;C:\Users\veron\.m2\repository\org\springframework\spring-jcl\5.0.9.RELEASE\spring-jcl-5.0.9.RELEASE.jar;C:\Users\veron\.m2\repository\org\springframework\spring-test\5.0.9.RELEASE\spring-test-5.0.9.RELEASE.jar;C:\Users\veron\.m2\repository\org\xmlunit\xmlunit-core\2.5.1\xmlunit-core-2.5.1.jar;C:\Users\veron\.m2\repository\org\junit\jupiter\junit-jupiter\5.8.0-M1\junit-jupiter-5.8.0-M1.jar;C:\Users\veron\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.0-M1\junit-jupiter-api-5.8.0-M1.jar;C:\Users\veron\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\veron\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\veron\.m2\repository\org\junit\platform\junit-platform-commons\1.8.0-M1\junit-platform-commons-1.8.0-M1.jar;C:\Users\veron\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.0-M1\junit-jupiter-params-5.8.0-M1.jar;C:\Users\veron\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.0-M1\junit-jupiter-engine-5.8.0-M1.jar;C:\Users\veron\.m2\repository\org\junit\platform\junit-platform-engine\1.8.0-M1\junit-platform-engine-1.8.0-M1.jar;C:\Users\veron\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.4.20\kotlin-stdlib-jdk8-1.4.20.jar;C:\Users\veron\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.4.20\kotlin-stdlib-1.4.20.jar;C:\Users\veron\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.4.20\kotlin-stdlib-common-1.4.20.jar;C:\Users\veron\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\veron\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.4.20\kotlin-stdlib-jdk7-1.4.20.jar;, java.vm.vendor=AdoptOpenJDK, sun.arch.data.model=64, user.variant=, java.vendor.url=https://adoptopenjdk.net/, user.timezone=Europe/Paris, os.name=Windows 10, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin, sun.java.command=E:\mThree Java Program Files\mThree-Java-Program-Training\JDBCTTestingExampleStarter\target\surefire\surefirebooter10269778780727494644.jar E:\mThree Java Program Files\mThree-Java-Program-Training\JDBCTTestingExampleStarter\target\surefire\surefire16600292316415862244tmp E:\mThree Java Program Files\mThree-Java-Program-Training\JDBCTTestingExampleStarter\target\surefire\surefire_07918896633833471968tmp, jdk.debug=release, surefire.test.class.path=E:\mThree Java Program Files\mThree-Java-Program-Training\JDBCTTestingExampleStarter\target\test-classes;E:\mThree Java Program Files\mThree-Java-Program-Training\JDBCTTestingExampleStarter\target\classes;C:\Users\veron\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.0.5.RELEASE\spring-boot-starter-jdbc-2.0.5.RELEASE.jar;C:\Users\veron\.m2\repository\org\springframework\boot\spring-boot-starter\2.0.5.RELEASE\spring-boot-starter-2.0.5.RELEASE.jar;C:\Users\veron\.m2\repository\org\springframework\boot\spring-boot\2.0.5.RELEASE\spring-boot-2.0.5.RELEASE.jar;C:\Users\veron\.m2\repository\org\springframework\spring-context\5.0.9.RELEASE\spring-context-5.0.9.RELEASE.jar;C:\Users\veron\.m2\repository\org\springframework\spring-aop\5.0.9.RELEASE\spring-aop-5.0.9.RELEASE.jar;C:\Users\veron\.m2\repository\org\springframework\spring-expression\5.0.9.RELEASE\spring-expression-5.0.9.RELEASE.jar;C:\Users\veron\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.0.5.RELEASE\spring-boot-autoconfigure-2.0.5.RELEASE.jar;C:\Users\veron\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.0.5.RELEASE\spring-boot-starter-logging-2.0.5.RELEASE.jar;C:\Users\veron\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\veron\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\veron\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.10.0\log4j-to-slf4j-2.10.0.jar;C:\Users\veron\.m2\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar;C:\Users\veron\.m2\repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar;C:\Users\veron\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\veron\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;C:\Users\veron\.m2\repository\com\zaxxer\HikariCP\2.7.9\HikariCP-2.7.9.jar;C:\Users\veron\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\veron\.m2\repository\org\springframework\spring-jdbc\5.0.9.RELEASE\spring-jdbc-5.0.9.RELEASE.jar;C:\Users\veron\.m2\repository\org\springframework\spring-beans\5.0.9.RELEASE\spring-beans-5.0.9.RELEASE.jar;C:\Users\veron\.m2\repository\org\springframework\spring-tx\5.0.9.RELEASE\spring-tx-5.0.9.RELEASE.jar;C:\Users\veron\.m2\repository\mysql\mysql-connector-java\8.0.13\mysql-connector-java-8.0.13.jar;C:\Users\veron\.m2\repository\com\google\protobuf\protobuf-java\3.6.1\protobuf-java-3.6.1.jar;C:\Users\veron\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.0.5.RELEASE\spring-boot-starter-test-2.0.5.RELEASE.jar;C:\Users\veron\.m2\repository\org\springframework\boot\spring-boot-test\2.0.5.RELEASE\spring-boot-test-2.0.5.RELEASE.jar;C:\Users\veron\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.0.5.RELEASE\spring-boot-test-autoconfigure-2.0.5.RELEASE.jar;C:\Users\veron\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\Users\veron\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\veron\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\veron\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\veron\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\veron\.m2\repository\org\assertj\assertj-core\3.9.1\assertj-core-3.9.1.jar;C:\Users\veron\.m2\repository\org\mockito\mockito-core\2.15.0\mockito-core-2.15.0.jar;C:\Users\veron\.m2\repository\net\bytebuddy\byte-buddy\1.7.9\byte-buddy-1.7.9.jar;C:\Users\veron\.m2\repository\net\bytebuddy\byte-buddy-agent\1.7.9\byte-buddy-agent-1.7.9.jar;C:\Users\veron\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\veron\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\veron\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\Users\veron\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\veron\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\veron\.m2\repository\org\springframework\spring-core\5.0.9.RELEASE\spring-core-5.0.9.RELEASE.jar;C:\Users\veron\.m2\repository\org\springframework\spring-jcl\5.0.9.RELEASE\spring-jcl-5.0.9.RELEASE.jar;C:\Users\veron\.m2\repository\org\springframework\spring-test\5.0.9.RELEASE\spring-test-5.0.9.RELEASE.jar;C:\Users\veron\.m2\repository\org\xmlunit\xmlunit-core\2.5.1\xmlunit-core-2.5.1.jar;C:\Users\veron\.m2\repository\org\junit\jupiter\junit-jupiter\5.8.0-M1\junit-jupiter-5.8.0-M1.jar;C:\Users\veron\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.0-M1\junit-jupiter-api-5.8.0-M1.jar;C:\Users\veron\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\veron\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\veron\.m2\repository\org\junit\platform\junit-platform-commons\1.8.0-M1\junit-platform-commons-1.8.0-M1.jar;C:\Users\veron\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.0-M1\junit-jupiter-params-5.8.0-M1.jar;C:\Users\veron\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.0-M1\junit-jupiter-engine-5.8.0-M1.jar;C:\Users\veron\.m2\repository\org\junit\platform\junit-platform-engine\1.8.0-M1\junit-platform-engine-1.8.0-M1.jar;C:\Users\veron\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.4.20\kotlin-stdlib-jdk8-1.4.20.jar;C:\Users\veron\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.4.20\kotlin-stdlib-1.4.20.jar;C:\Users\veron\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.4.20\kotlin-stdlib-common-1.4.20.jar;C:\Users\veron\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\veron\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.4.20\kotlin-stdlib-jdk7-1.4.20.jar;, sun.cpu.endian=little, user.home=C:\Users\veron, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2021-01-19, java.home=C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot, file.separator=\, basedir=E:\mThree Java Program Files\mThree-Java-Program-Training\JDBCTTestingExampleStarter, java.vm.compressedOopsMode=32-bit, line.separator=
+, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, surefire.real.class.path=E:\mThree Java Program Files\mThree-Java-Program-Training\JDBCTTestingExampleStarter\target\surefire\surefirebooter10269778780727494644.jar, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=11.0.10+9, user.name=veron, path.separator=;, os.version=10.0, java.runtime.name=OpenJDK Runtime Environment, file.encoding=Cp1252, java.vm.name=OpenJDK 64-Bit Server VM, java.vendor.version=AdoptOpenJDK, localRepository=C:\Users\veron\.m2\repository, java.vendor.url.bug=https://github.com/AdoptOpenJDK/openjdk-support/issues, java.io.tmpdir=C:\Users\veron\AppData\Local\Temp\, idea.version=2020.3.2, java.version=11.0.10, user.dir=E:\mThree Java Program Files\mThree-Java-Program-Training\JDBCTTestingExampleStarter, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.os.patch.level=, java.library.path=C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Amazon Corretto\jdk11.0.10_9\bin;C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\SourceGear\Common\DiffMerge\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\veron\AppData\Local\Microsoft\WindowsApps;C:\Users\veron\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\veron\AppData\Local\GitHubDesktop\bin;C:\Users\veron\AppData\Roaming\npm;., java.vm.info=mixed mode, java.vendor=AdoptOpenJDK, java.vm.version=11.0.10+9, sun.io.unicode.encoding=UnicodeLittle, java.class.version=55.0}}, SystemEnvironmentPropertySource@2085745483 {name=&apos;systemEnvironment&apos;, properties={PATH=C:\Program Files\Amazon Corretto\jdk11.0.10_9\bin;C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\SourceGear\Common\DiffMerge\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\veron\AppData\Local\Microsoft\WindowsApps;C:\Users\veron\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\veron\AppData\Local\GitHubDesktop\bin;C:\Users\veron\AppData\Roaming\npm, USERDOMAIN_ROAMINGPROFILE=LAPTOP-89BLEMBL, PROCESSOR_LEVEL=6, SYSTEMDRIVE=C:, SESSIONNAME=Console, ALLUSERSPROFILE=C:\ProgramData, PLATFORMCODE=KV, PROCESSOR_ARCHITECTURE=AMD64, DRIVERDATA=C:\Windows\System32\Drivers\DriverData, =E:=E:\mThree Java Program Files\mThree-Java-Program-Training\JDBCTTestingExampleStarter, PROGRAMFILES=C:\Program Files, PSMODULEPATH=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules, PROGRAMDATA=C:\ProgramData, USERNAME=veron, FPS_BROWSER_USER_PROFILE_STRING=Default, ONEDRIVE=C:\Users\veron\OneDrive, PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, ONEDRIVECONSUMER=C:\Users\veron\OneDrive, REGIONCODE=NA, WINDIR=C:\WINDOWS, HOMEPATH=\Users\veron, PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 126 Stepping 5, GenuineIntel, PUBLIC=C:\Users\Public, VS160COMCOMNTOOLS=C:\Program Files (x86)\Visual Studio\Common7\Tools\, =::=::\, LOCALAPPDATA=C:\Users\veron\AppData\Local, COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files, USERDOMAIN=LAPTOP-89BLEMBL, FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, LOGONSERVER=\\LAPTOP-89BLEMBL, JAVA_HOME=C:\Program Files\Amazon Corretto\jdk11.0.10_9, PROMPT=$P$G, PROGRAMFILES(X86)=C:\Program Files (x86), ONLINESERVICES=Online Services, APPDATA=C:\Users\veron\AppData\Roaming, PROGRAMW6432=C:\Program Files, SYSTEMROOT=C:\WINDOWS, OS=Windows_NT, COMMONPROGRAMW6432=C:\Program Files\Common Files, COMPUTERNAME=LAPTOP-89BLEMBL, COMMONPROGRAMFILES=C:\Program Files\Common Files, COMSPEC=C:\WINDOWS\system32\cmd.exe, PROCESSOR_REVISION=7e05, TEMP=C:\Users\veron\AppData\Local\Temp, HOMEDRIVE=C:, USERPROFILE=C:\Users\veron, TMP=C:\Users\veron\AppData\Local\Temp, NUMBER_OF_PROCESSORS=8, IDEA_INITIAL_DIRECTORY=C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3.2\jbr\bin}}]
+14:27:42.855 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+14:27:42.856 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource &apos;Inlined Test Properties&apos; with highest search precedence
+
+  .   ____          _            __ _ _
+ /\\ / ___&apos;_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | &apos;_ | &apos;_| | &apos;_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  &apos;  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.5.RELEASE)
+
+</system-out>
+  </testcase>
+  <testcase classname="com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest" name="getEmployeeById" time="0.008"/>
+  <testcase classname="com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest" name="getAllEmployees" time="0.016">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest.getAllEmployees(EmployeeDaoDBTest.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:83)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+  </testcase>
+  <testcase classname="com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest" name="deleteEmployeeById" time="0.05"/>
+  <testcase classname="com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest" name="updateEmployee" time="0.015">
+    <failure message="expected:&lt;com.sg.jdbctcomplexexample.entity.Employee@3c74aa0d&gt; but was:&lt;com.sg.jdbctcomplexexample.entity.Employee@6c841199&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;com.sg.jdbctcomplexexample.entity.Employee@3c74aa0d&gt; but was:&lt;com.sg.jdbctcomplexexample.entity.Employee@6c841199&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest.updateEmployee(EmployeeDaoDBTest.java:95)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:83)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+  </testcase>
+</testsuite>
