@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin
 @RestController
 @RequestMapping("/api/dvds")
 public class DVDController {
@@ -85,7 +84,6 @@ public class DVDController {
         }
         return response;
     }
-
     @DeleteMapping("/dvd/{id}")
     public ResponseEntity delete(@PathVariable int id) {
         if (dao.deleteByDVDId(id)) {

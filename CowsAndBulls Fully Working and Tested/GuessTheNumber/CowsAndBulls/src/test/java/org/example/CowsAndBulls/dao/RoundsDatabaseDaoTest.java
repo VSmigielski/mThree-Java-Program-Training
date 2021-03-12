@@ -36,6 +36,7 @@ public class RoundsDatabaseDaoTest {
             gameDao.deleteByGameId((g.getGameId()));
         }
     }
+
     @Test
     public void testAddRoundById() {
         Games game = new Games();
@@ -53,6 +54,7 @@ public class RoundsDatabaseDaoTest {
         List<Rounds> rounds = roundDao.getAllRounds();
         assertEquals(1, rounds.size());
     }
+
     @Test
     public void testGetAllRounds() {
         Games game = new Games();

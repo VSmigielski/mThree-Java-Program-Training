@@ -28,8 +28,8 @@ public class DVDDatabaseDao implements DVDDao {
 
     @Override
     public DVD add(DVD dvd) {
-        final String sql = "INSERT INTO dvd(title, releaseYear, director, rating, notes) " +
-                "VALUES(?,?,?,?,?);";
+        final String sql = "INSERT INTO dvd(dvdId, title, releaseYear, director, rating, notes) " +
+                "VALUES(?,?,?,?,?,?);";
         GeneratedKeyHolder keyHolder = new GeneratedKeyHolder();
 
         jdbcTemplate.update((Connection conn) -> {
@@ -38,12 +38,12 @@ public class DVDDatabaseDao implements DVDDao {
                     sql,
                     Statement.RETURN_GENERATED_KEYS);
 
-            // statement.setInt(1, dvd.getDVDId());
-            statement.setString(1, dvd.getTitle());
-            statement.setInt(2, dvd.getReleaseYear());
-            statement.setString(3, dvd.getDirector());
-            statement.setString(4, dvd.getRating());
-            statement.setString(5, dvd.getNotes());
+            statement.setInt(1, dvd.getDVDId());
+            statement.setString(2, dvd.getTitle());
+            statement.setInt(3, dvd.getReleaseYear());
+            statement.setString(4, dvd.getDirector());
+            statement.setString(5, dvd.getRating());
+            statement.setString(6, dvd.getNotes());
 
             return statement;
 
