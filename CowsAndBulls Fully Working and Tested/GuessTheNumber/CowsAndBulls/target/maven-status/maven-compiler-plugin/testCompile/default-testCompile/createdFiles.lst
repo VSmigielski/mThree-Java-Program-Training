@@ -1,2 +1,3 @@
-org\example\CowsAndBulls\dao\GamesDatabaseDaoTest.class
+org\example\CowsAndBulls\service\GamesServiceTest.class
 org\example\CowsAndBulls\dao\RoundsDatabaseDaoTest.class
+org\example\CowsAndBulls\dao\GamesDatabaseDaoTest.class

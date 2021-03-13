@@ -64,11 +64,16 @@ public class GamesDatabaseDaoTest {
         game.setAnswer("2784");
         game.setFinished(false);
         game = gameDao.addGame(game);
+
         Games fromDao = gameDao.getGameById(game.getGameId());
+
         assertEquals(game, fromDao);
+
         game.setFinished(true);
         gameDao.updateGame(game);
+
         assertNotEquals(game, fromDao);
+
         fromDao = gameDao.getGameById((game.getGameId()));
         assertEquals(game, fromDao);
     }

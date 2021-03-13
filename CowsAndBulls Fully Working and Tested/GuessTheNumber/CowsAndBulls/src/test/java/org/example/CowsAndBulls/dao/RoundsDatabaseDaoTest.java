@@ -50,8 +50,11 @@ public class RoundsDatabaseDaoTest {
         round.setGuess("2345");
         round.setResult("e:0:p:0");
         round.setGameId(game.getGameId());
+
         round = roundDao.addRound(round);
+
         List<Rounds> rounds = roundDao.getAllRounds();
+
         assertEquals(1, rounds.size());
     }
 
@@ -61,17 +64,22 @@ public class RoundsDatabaseDaoTest {
         game.setAnswer("5678");
         game.setFinished(false);
         game = gameDao.addGame(game);
+
         Rounds round = new Rounds();
         round.setGuess("2345");
         round.setResult("e:0:p:0");
         round.setGameId(game.getGameId());
         roundDao.addRound(round);
+
         Rounds round2 = new Rounds();
         round2.setGuess("2394");
         round2.setResult("e:4:p:0");
         round2.setGameId(game.getGameId());
+
         roundDao.addRound(round2);
+
         List<Rounds> rounds = roundDao.getAllRounds();
+
         assertEquals(2, rounds.size());
     }
 }

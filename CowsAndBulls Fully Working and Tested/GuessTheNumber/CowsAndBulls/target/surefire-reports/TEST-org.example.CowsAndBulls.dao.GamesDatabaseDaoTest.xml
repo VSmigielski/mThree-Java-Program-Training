@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.example.CowsAndBulls.dao.GamesDatabaseDaoTest" time="5.022" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.example.CowsAndBulls.dao.GamesDatabaseDaoTest" time="0.126" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2020.3.2"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.10+9"/>
     <property name="sun.boot.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\veron\Downloads\CowsAndBulls-main\GuessTheNumber\CowsAndBulls"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\mThree-Java-Program-Training\CowsAndBulls Fully Working and Tested\GuessTheNumber\CowsAndBulls"/>
     <property name="java.vm.vendor" value="AdoptOpenJDK"/>
     <property name="java.vendor.url" value="https://adoptopenjdk.net/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\veron\Downloads\CowsAndBulls-main\GuessTheNumber\CowsAndBulls"/>
+    <property name="user.dir" value="D:\mThree-Java-Program-Training\CowsAndBulls Fully Working and Tested\GuessTheNumber\CowsAndBulls"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.runtime.version" value="11.0.10+9"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
@@ -63,7 +63,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="addGame" classname="org.example.CowsAndBulls.dao.GamesDatabaseDaoTest" time="1.133"/>
-  <testcase name="getAllGames" classname="org.example.CowsAndBulls.dao.GamesDatabaseDaoTest" time="0.024"/>
-  <testcase name="updateGame" classname="org.example.CowsAndBulls.dao.GamesDatabaseDaoTest" time="0.028"/>
+  <testcase name="addGame" classname="org.example.CowsAndBulls.dao.GamesDatabaseDaoTest" time="0"/>
+  <testcase name="getAllGames" classname="org.example.CowsAndBulls.dao.GamesDatabaseDaoTest" time="0.018"/>
+  <testcase name="updateGame" classname="org.example.CowsAndBulls.dao.GamesDatabaseDaoTest" time="0.033"/>
 </testsuite>

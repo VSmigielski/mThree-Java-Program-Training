@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.example.CowsAndBulls.dao.RoundsDatabaseDaoTest" time="9.533" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.example.CowsAndBulls.service.GamesServiceTest" time="0.093" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2020.3.2"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -63,6 +63,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testGetAllRounds" classname="org.example.CowsAndBulls.dao.RoundsDatabaseDaoTest" time="1.87"/>
-  <testcase name="testAddRoundById" classname="org.example.CowsAndBulls.dao.RoundsDatabaseDaoTest" time="0.039"/>
+  <testcase name="testDetermineResult1" classname="org.example.CowsAndBulls.service.GamesServiceTest" time="0"/>
+  <testcase name="testDetermineResult2" classname="org.example.CowsAndBulls.service.GamesServiceTest" time="0"/>
+  <testcase name="testDetermineResult3" classname="org.example.CowsAndBulls.service.GamesServiceTest" time="0.02"/>
+  <testcase name="testDetermineResult4" classname="org.example.CowsAndBulls.service.GamesServiceTest" time="0.02"/>
+  <testcase name="testDetermineResult5" classname="org.example.CowsAndBulls.service.GamesServiceTest" time="0.006"/>
 </testsuite>
