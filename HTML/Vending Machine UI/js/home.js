@@ -142,6 +142,7 @@ function loadItems() {
 function selectedItem(id) {
 	// This is the selector for this html element
     $('#itemToVend').val(id);
+	$('#changeInputBox').val('');
 }
  
 // This is the function when making a purchase
