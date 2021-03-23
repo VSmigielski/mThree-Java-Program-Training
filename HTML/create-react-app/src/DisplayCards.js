@@ -37,22 +37,26 @@ const productsArray = [
 function ProductCard({ product, upvote, downvote }) {
   return (
     <div className="productCard">
-      <h2>{product.name}</h2>
-      <ul style={{ listStyleType: "none" }}>
-        <li>Upvotes: {product.upvotes}</li>
-        <li>Downvotes: {product.downvotes}</li>
-      </ul>
-      <div>
-        <div className="d-flex justify-content-evenly">
-        <button className="btn btn-info buttons" data-target={product.productId} onClick={upvote}>
-          Upvote
-        </button>
-        <button className="btn btn-info buttons" data-target={product.productId} onClick={downvote}>
-          Downvote
-        </button>
+      <div className="row">
+      <div className="col-sm-6">
+        <h2>{product.name}</h2>
+        <ul style={{ listStyleType: "none" }}>
+          <li>Upvotes: {product.upvotes}</li>
+          <li>Downvotes: {product.downvotes}</li>
+        </ul>
+      </div>
+      <div className="col-sm-6">
+        <div className="d-flex flex-column">
+          <button className="btn btn-info buttons m-1" data-target={product.productId} onClick={upvote}>
+            Upvote
+          </button>
+          <button className="btn btn-info buttons m-1" data-target={product.productId} onClick={downvote}>
+            Downvote
+          </button>
         </div>
       </div>
     </div>
+  </div>
   );
 };
 
@@ -98,14 +102,12 @@ export default function DisplayCards(props) {
         <ProductCard key={Math.random()*100123} product={product} upvote={upvote} downvote={downvote} />
         </div>
       ))}
+      <div className="col-sm-8"></div>
       </div>
-      <div className="mb-5 mt-2">
-        <div className="row m-3">
-          <div col="col-sm-12">
-          <p>Sort By:</p>
+        <div className="row mb-5 mt-2">
+          <div col="col-sm-2">
+          <h2 className="mb-3 mt-2">Sort By:</h2>
           </div>
-        </div>
-        <div className="row">
         <div className="col-sm-3">
         <button className="btn btn-info" onClick={() => sortProducts("upvotes", "ascending")}>Upvotes in ASC order</button>
         </div>
@@ -120,6 +122,5 @@ export default function DisplayCards(props) {
         </div>
         </div>
       </div>
-    </div>
   );
 }
