@@ -29,6 +29,11 @@
         </div>
     </div>
     <div class="row m-4 border border-dark">
+        <div class="col-12 m-1 text-center"
+             th:if="${!errors.isEmpty()}">
+            <p class="alert alert-danger" th:each="error : ${errors}"
+               th:text="${error.message}">Error message</p>
+        </div>
         <div class="col-3 text-center m-3">
             <span class="h3">Add Student</span>
         </div>
@@ -62,8 +67,8 @@
                     <th>ID</th>
                     <th>First Name</th>
                     <th>Last Name</th>
-                    <a href="#" th:href="@{/editStudent(id=${student.id})}">Edit</a>
-                    <a href="#" th:href="@{/deleteStudent(id=${student.id})}">Delete</a>
+                    <th>Edit</th>
+                    <th>Delete</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -71,8 +76,8 @@
                     <td th:text="${student.id}">Teacher ID</td>
                     <td th:text="${student.firstName}">Teacher First Name</td>
                     <td th:text="${student.lastName}">Teacher Last Name</td>
-                    <td>Edit</td>
-                    <td>Delete</td>
+                    <td><a href="#" th:href="@{/editStudent(id=${student.id})}">Edit</a></td>
+                    <td><a href="#" th:href="@{/deleteStudent(id=${student.id})}">Delete</a></td>
                 </tr>
                 </tbody>
             </table>
