@@ -57,7 +57,7 @@
                         Name</label>
                     <div class="col-sm-9">
                         <input type="text" name="name" id="name"
-                               class="form-control" th:value="${supers.name}"/>
+                               class="form-control" th:value="${supers.name}" required/>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -65,15 +65,37 @@
                         Description</label>
                     <div class="col-sm-9">
                         <input type="text" name="description" id="description"
-                               class="form-control"  th:value="${supers.description}"/>
+                               class="form-control"  th:value="${supers.description}" required/>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="isEvil" class="col-sm-3 col-form-label">
+                        Hero or Villain?</label>
+                    <div class="col-sm-9">
+                        <input type="text" name="isEvil"
+                               id="isEvil" class="form-control" placeholder="True for hero/False for Villain" required/>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="powerId" class="col-sm-3 col-form-label">
                         Power Id</label>
                     <div class="col-sm-9">
-                        <input type="number" name="powerId" id="powerId"
-                               class="form-control" th:value="${supers.powerId}"/>
+                        <select name="powerId" id="powerId" class="form-control"/>
+                                <option th:each="power : ${powers}" th:value="${power.powerId}"
+                                        th:text="${power.superpower}" th:selected="${supers.powers.powerId}"> Power Name
+                                </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="organizationId" class="col-3 col-form-label">
+                        Organizations</label>
+                    <div class="col-9">
+                        <select multiple name="organizationId" id="organizationId" class="form-control">
+                            <option th:each="organization : ${organizations}" th:value="${organization.organizationId}"
+                                    th:text="${organization.organizationName}" class="form-control"> Organization Name
+                            </option>
+                        </select>
                     </div>
                 </div>
 

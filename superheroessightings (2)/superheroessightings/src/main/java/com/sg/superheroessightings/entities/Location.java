@@ -2,7 +2,6 @@ package com.sg.superheroessightings.entities;
 
 import lombok.Data;
 
-import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.util.Objects;
@@ -20,11 +19,7 @@ public class Location {
     @NotBlank(message = "Location's Address must not be empty.")
     @Size(max = 256, message="Location's Address must be less than 255 characters.")
     public String address;
-    @NotBlank(message = "Latitude must not be empty.")
-    @Size(max = 10, message = "Latitude must be less than 10 characters")
     public double latitude;
-    @NotBlank(message = "Longitude must not be empty")
-    @Size(max = 10, message = "Longitude must be less than 10 characters")
     public double longitude;
 
     public int getLocationId() {

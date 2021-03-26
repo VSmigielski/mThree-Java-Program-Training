@@ -60,7 +60,7 @@ function ProductCard({ product, upvote, downvote }) {
   );
 };
 
-export default function DisplayCards(props) {
+export default function DisplayCards() {
   const [products, setProducts] = useState(productsArray);
   const upvote = event => {
     const productId = event.currentTarget.getAttribute("data-target");
